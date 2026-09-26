@@ -109,9 +109,9 @@ export function renderPlan(plan, catalogByCode) {
 
   let rangeNote;
   if (withinRange && multipleOf100) {
-    rangeNote = `<span class="ok">В диапазоне ${targetMin}–${targetMax} м, кратно 100 м — пловчиха заканчивает у старта</span>`;
+    rangeNote = `<span class="ok">В диапазоне ${targetMin}–${targetMax} м, кратно 100 м — тренировка заканчивается у старта</span>`;
   } else if (!multipleOf100) {
-    rangeNote = `<span class="warn">Объём ${mandatoryVolume} м не кратен 100 м — пловчиха не закончит тренировку у старта (PLAN_RULES.md, "Позиция у борта"). Попробуйте другой диапазон.</span>`;
+    rangeNote = `<span class="warn">Объём ${mandatoryVolume} м не кратен 100 м — тренировка не закончится у старта (PLAN_RULES.md, "Позиция у борта"). Попробуйте другой диапазон.</span>`;
   } else {
     rangeNote = `<span class="warn">Не удалось точно попасть в диапазон ${targetMin}–${targetMax} м доступными упражнениями — объём ${mandatoryVolume} м. Добавьте упражнение или измените диапазон.</span>`;
   }

@@ -8,7 +8,7 @@ export function initSettingsTab(root) {
       <div class="stack-form">
         <label>Бассейн (м, фиксировано) <input type="number" value="${settings.pool_length_m}" disabled></label>
         <label>Длительность тренировки (мин, фиксировано) <input type="number" value="${settings.session_minutes}" disabled></label>
-        <div class="hint">≈${settings.default_target_min}–${settings.default_target_max} м за 45 мин на текущем темпе пловчихи.</div>
+        <div class="hint">≈${settings.default_target_min}–${settings.default_target_max} м за 45 мин на текущем темпе — подставьте фактические цифры под своего спортсмена.</div>
         <label>Стиль-фокус <input type="text" id="s-style" value="${settings.style_focus}"></label>
         <label>Частота тренировок в неделю <input type="number" id="s-freq" value="${settings.frequency_per_week ?? ''}"></label>
         <label>Диапазон объёма по умолчанию: от <input type="number" id="s-min" step="50" value="${settings.default_target_min}"> до <input type="number" id="s-max" step="50" value="${settings.default_target_max}"></label>
